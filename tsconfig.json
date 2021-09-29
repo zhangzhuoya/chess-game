@@ -3,14 +3,14 @@
     "target": "es5",
     "lib": [
       "dom",
-      "dom.iterable",
-      "esnext"
+      "dom.iterable", //旧版浏览器不支持迭代器，如果获取到doms，开启的是库环境
+      "esnext" // 版本 es2016,
     ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
+    "allowJs": true,//  ts文件中是否支持引用js
+    "skipLibCheck": true,//
+    "esModuleInterop": true,// 是否允许es6模块化标准和commjs标准交互
+    "allowSyntheticDefaultImports": true,//
+    "strict": true,// 是否严格检查
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
