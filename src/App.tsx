@@ -1,11 +1,25 @@
 import React from 'react';
-import { ChessComp } from './components/ChessComp';
+import { BoardComp } from './components/BoardComp';
 import { ChessType } from './types/enums'
-
+let board = [
+  ChessType.none,
+  ChessType.red,
+  ChessType.black,
+  ChessType.none,
+  ChessType.red,
+  ChessType.black,
+  ChessType.none,
+  ChessType.red,
+  ChessType.black
+]
+let isOver:Boolean = false
 function App() {
   return (
     <div className="App">
-      <ChessComp type={ChessType.red} onClick={()=>{console.log('点击了')}}></ChessComp>
+      <BoardComp board={board} isOver={isOver} onClick={()=>{
+        console.log('dianjile ');
+        
+      }}></BoardComp>
     </div>
   );
 }
