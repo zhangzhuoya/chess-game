@@ -1,0 +1,26 @@
+.chess {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #eee;
+}
+.chess-item.none {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.chess-item.red {
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(#fff, red);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.chess-item.black {
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(#fff, #111);
+    cursor: pointer;
+}

@@ -1,10 +1,11 @@
 import React from 'react';
-import { CountComp } from './components/CountComp';
+import { ChessComp } from './components/ChessComp';
+import { ChessType } from './types/enums'
 
 function App() {
   return (
     <div className="App">
-      <CountComp num={2} onChange={(n)=>{}} />
+      <ChessComp type={ChessType.red} onClick={()=>{console.log('点击了')}}></ChessComp>
     </div>
   );
 }
